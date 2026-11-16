@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Política de privacidade — Siemvist</title>
+<meta name="description" content="Política de privacidade do app Siemvist. O Siemvist não coleta nem envia dados pessoais a nenhum servidor.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="icon.png">
+</head>
+<body>
+<main>
+<header>
+  <a class="brand" href="./"><img src="icon.png" width="36" height="36" alt=""><span>SIEMVIST</span></a>
+  <nav><a href="./">Español</a><a href="en.html">English</a><a href="pt.html" aria-current="page">Português</a></nav>
+</header>
+
+<h1>Política de privacidade</h1>
+<p class="meta">Siemvist para Android · Desenvolvedor: Azmyd (Colômbia) · Em vigor desde 15 de novembro de 2026</p>
+
+<p class="summary"><strong>Em uma frase:</strong> o Siemvist guarda tudo no seu dispositivo. O app não envia dados próprios a nenhum servidor, não tem contas de usuário, não exibe anúncios e não inclui ferramentas de análise nem de rastreamento.</p>
+
+<h2>1. O que o Siemvist faz</h2>
+<p>O Siemvist ajuda você a lembrar onde guarda suas coisas. Você fotografa um objeto, diz ou escreve onde ele está e, quando precisar, procura pelo nome ou por voz. Todo o processamento acontece no seu telefone.</p>
+
+<h2>2. Dados guardados no seu dispositivo</h2>
+<p>Estas informações existem apenas no armazenamento privado do app, no seu telefone. Nós não temos acesso a elas.</p>
+<table>
+<tr><th>Dado</th><th>Para que é usado</th></tr>
+<tr><td>Fotos dos seus objetos</td><td>Identificar o objeto na lista e na busca.</td></tr>
+<tr><td>Nome, lugar descrito por você, notas e etiquetas</td><td>Encontrar o objeto depois. O "lugar" é o texto que você digita ou dita; o app não usa GPS nem pede permissão de localização.</td></tr>
+<tr><td>Lembretes</td><td>Mostrar notificações locais na data que você escolher.</td></tr>
+<tr><td>Zona privada</td><td>Os objetos privados são protegidos por um PIN. Apenas um resumo criptográfico (hash) do PIN é guardado no armazenamento seguro do Android, nunca o PIN em texto claro. Se você usar impressão digital ou rosto, a verificação é feita pelo Android; o app não acessa seus dados biométricos.</td></tr>
+<tr><td>Configurações e estado da compra Premium</td><td>Lembrar suas preferências e se você tem o Premium.</td></tr>
+</table>
+
+<h2>3. Dados que o app envia</h2>
+<p><strong>Nenhum.</strong> O Siemvist não envia suas fotos, textos, gravações nem qualquer outro dado próprio a servidores da Azmyd nem de ninguém. O app não tem servidor próprio.</p>
+<p>O app usa a internet apenas nestes casos, e em nenhum deles suas informações são transmitidas:</p>
+<ul>
+<li><strong>Download dos modelos de IA (primeira vez).</strong> Para reconhecer objetos nas fotos, o app baixa uma única vez dois modelos de inteligência artificial (cerca de 90 MB) do Hugging Face, publicados pela Software Mansion. Depois disso, o reconhecimento é executado no seu telefone, sem conexão.</li>
+<li><strong>Download dos modelos de tradução.</strong> Para traduzir as etiquetas dos objetos para o seu idioma, o app usa o ML Kit do Google no dispositivo. Na primeira vez, baixa o modelo de idioma do Google; o texto traduzido não sai do seu telefone.</li>
+<li><strong>Compra do Premium.</strong> O Google Play processa o pagamento (veja a seção 5).</li>
+<li><strong>Ditado por voz no Android 12 ou inferior.</strong> Veja a seção 4.</li>
+</ul>
+
+<h2>4. Ditado por voz</h2>
+<p>Quando você toca no microfone, o ditado é processado pelo <strong>serviço de reconhecimento de voz do sistema Android</strong> (normalmente o do Google), não pelo Siemvist. O app recebe apenas o texto resultante e não guarda nem envia o áudio.</p>
+<p><strong>No Android 12 ou inferior</strong>, esse serviço do sistema <strong>pode usar a internet</strong> para transcrever sua voz, conforme a configuração do seu dispositivo e a política de privacidade do provedor. No Android 13 ou superior, o sistema costuma processar a voz no próprio dispositivo. Se preferir não usar o ditado, você pode digitar pelo teclado: nenhuma função depende da voz.</p>
+
+<h2>5. Compra do Premium (Google Play)</h2>
+<p>O Premium é um pagamento único que amplia o número de objetos. O pagamento é gerenciado pelo Google Play sob sua própria <a href="https://policies.google.com/privacy" rel="noopener">política de privacidade</a>. O Siemvist recebe do Google Play apenas a confirmação de que a compra existe e a guarda no seu dispositivo. Não recebemos seu nome, seu e-mail nem dados de pagamento.</p>
+
+<h2>6. Cópias de segurança</h2>
+<p>Você pode exportar uma cópia dos seus dados. O arquivo é criptografado com uma senha escolhida por você (AES-256) e entregue ao app que você selecionar para guardá-lo ou compartilhá-lo. Esse arquivo nunca passa por nós. Sem a senha, ninguém consegue abri-lo, nem mesmo a Azmyd.</p>
+
+<h2>7. Permissões solicitadas pelo app</h2>
+<table>
+<tr><th>Permissão</th><th>Quando é solicitada e para quê</th></tr>
+<tr><td>Câmera</td><td>Ao fotografar um objeto. As fotos ficam guardadas apenas no app.</td></tr>
+<tr><td>Microfone</td><td>Ao tocar no microfone para ditar. Veja a seção 4.</td></tr>
+<tr><td>Notificações</td><td>Ao salvar seu primeiro objeto ou programar um lembrete. Servem para os lembretes e para o atalho de busca.</td></tr>
+<tr><td>Internet</td><td>Apenas para o descrito na seção 3.</td></tr>
+<tr><td>Fotos e arquivos (Android 12 ou inferior)</td><td>Escolher uma foto existente ou salvar uma cópia de segurança.</td></tr>
+<tr><td>Vibração</td><td>Resposta tátil ao tocar.</td></tr>
+</table>
+<p>Nenhuma permissão é solicitada ao abrir o app; cada uma é pedida no momento em que você a usa, e você pode recusá-la.</p>
+
+<h2>8. Terceiros</h2>
+<p>O Siemvist não integra SDKs de publicidade, análise ou redes sociais. Os únicos serviços externos envolvidos são: Google Play (compras e download do modelo de tradução), Hugging Face (download dos modelos de IA) e o serviço de reconhecimento de voz do sistema Android. Cada um é regido por sua própria política de privacidade.</p>
+
+<h2>9. Menores</h2>
+<p>O Siemvist é destinado ao público em geral e não foi projetado para menores de 13 anos. Como não coletamos dados, não tratamos informações de menores.</p>
+
+<h2>10. Retenção e exclusão</h2>
+<p>Seus dados permanecem no seu dispositivo enquanto você os mantiver. Você pode excluir qualquer objeto pelo app. Ao desinstalar o Siemvist, todos os dados do app são removidos. Não existe nenhuma cópia em servidores que precisemos apagar.</p>
+
+<h2>11. Segurança</h2>
+<p>Os dados ficam no espaço privado do app, isolado pelo Android de outros aplicativos. O PIN da zona privada é guardado como hash no armazenamento seguro do sistema. As cópias de segurança são criptografadas com a sua senha.</p>
+
+<h2>12. Alterações nesta política</h2>
+<p>Se o app mudar a forma como trata os dados, atualizaremos esta página e indicaremos a nova data de vigência.</p>
+
+<h2>13. Contato</h2>
+<p>Azmyd · Colômbia · <a href="mailto:contacto@azmyd.com">contacto@azmyd.com</a></p>
+
+<footer>© 2026 Azmyd. Siemvist e seu logotipo são marcas da Azmyd.</footer>
+</main>
+</body>
+</html>
